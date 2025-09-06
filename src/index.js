@@ -3,7 +3,7 @@ import { DB_NAME } from "./constants.js";
 import connectDB from "./db/index.js";
 import dotenv from "dotenv";
 import express from "express"
-import {app as ap} from "./app.js"
+import ap from "./app.js"
 import { ApiError } from "./utils/apiError.js";
 import cors from "cors"
 import cookieParser from "cookie-parser"

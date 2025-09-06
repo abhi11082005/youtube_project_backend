@@ -38,4 +38,4 @@ app.use("/dashboard",dashboardRouter)
 // app.use("/users",userRouter)
 
 //http://localhost:8000/api/abhi/users  =>userrouter ko paas kar dega  =>/register path added
-export {app}
+export default app;
