@@ -30,7 +30,7 @@ connectDB()
 
 app.use(ap)
 
-
+export default app;
 
 
 
