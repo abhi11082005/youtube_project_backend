@@ -15,9 +15,9 @@ dotenv.config({
 const app=express()
 connectDB()
 .then(()=>{
-    app.listen(process.env.PORT|| 8001 , ()=>{
-        console.log(`Server is running on Port: ${process.env.PORT}`)
-    })
+    // app.listen(process.env.PORT|| 8001 , ()=>{
+    //     console.log(`Server is running on Port: ${process.env.PORT}`)
+    // })
     
     app.on("error",(error)=>{
         console.log("ERROR: ",error)
