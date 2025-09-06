@@ -97,14 +97,13 @@ const loginUser=asyncHandler(async(req,res)=>{
     let query={};
     if (username) query.username = username;
     if (email) query.email = email;
-    console.log(username)
-    console.log(email)
+    
     if(!username && !email){
         throw new ApiError(400,"username or email not found");
     }
     if(!password) {throw new ApiError(400,"password not found");
     }
-    console.log(email,"      ",password)
+    
     const user=await User.findOne({
         $or: [query]
     })
