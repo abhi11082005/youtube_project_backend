@@ -1,5 +1,5 @@
 import mongoose from "mongoose"
-import bcrypt from "bcrypt"   //used for password hashing
+import bcrypt from "bcryptjs"   //used for password hashing
 import jwt from "jsonwebtoken" //use to make tokens
 
 

@@ -11,6 +11,6 @@ const connectDB=async()=>{
     catch(error){
         console.log("Mongodb connection error please fix it",error)
         process.exit(1);
-    }
+    } 
 }
 export default connectDB
